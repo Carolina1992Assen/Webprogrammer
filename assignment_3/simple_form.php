@@ -17,13 +17,9 @@ include __DIR__ . '/tpl/body_start.php';
 
 
 
-
-
-
-    <div  class="hi">
+    <div>
         <h1>
-
-        <?php
+            <?php
             $name = isset($_GET['nana']) ? $_GET['nana']: "";
             if ($name !== "") {
             echo("Welcome {$name}!");
