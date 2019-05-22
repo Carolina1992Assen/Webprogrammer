@@ -2,12 +2,11 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="b93097d9-fe64-42fb-9f24-329a2f3138aa" name="Siegfried Webhosting" url="http://siegfried.webhosting.rug.nl/~s2582562">
-        <fileTransfer host="ssh.webhosting.rug.nl" port="22" rootFolder="/home/www/s2582562/site" accessType="SFTP">
+      <webServer id="e6c67731-557a-4516-b918-ee0afbc98a68" name="Apache-xcript">
+        <fileTransfer port="0" accessType="LOCAL">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>
