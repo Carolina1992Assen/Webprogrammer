@@ -1,36 +1,22 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@Carolina1992Assen
-1
-0 0 reinardvandalen/WP19
-Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
-WP19/assignment_2/assignment2.html
-@reinardvandalen reinardvandalen Assignment 2
-9317332 26 days ago
-99 lines (96 sloc)  3.42 KB
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Data -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Webprogramming Assignment 1</title>
+    <
+
+
+    <link rel="stylesheet" href=“bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script type="application/javascript" src="js/main.js"></script>
+    <script type="application/javascript" src="main.js"></script>
 </head>
 <body>
 <header>
@@ -49,9 +35,35 @@ WP19/assignment_2/assignment2.html
             <h1>Contact Form</h1>
             <p>Please enter your name, age, city, Email address and phone number. We'll contact you for more information.</p>
             <div class="alert alert-danger" id="form-alert" role="alert">
-                Not all form fields are filled in!
             </div>
-            <h3 class="assignment">1. Add a BS styled form</h3>
+            <h3 class="assignment"
+            <form id="form">
+                <div class="form-group" id="n">
+                    <label id="namelabel" for="name">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group" id="a">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age">
+                </div>
+                <div class="form-group" id="c">
+                    <label for="city">City:</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group" id="e">
+                    <label for="email">email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group" id="p">
+                    <label for="pn">Phone Number:</label>
+                    <input type="number" class="form-control" id="pn">
+                </div>
+                <button id="sb" class="button">Submit</button>
+                <button id="eb" class="button">Erase</button>
+            </form>
+            </h3>
+
+
         </div>
         <div class="col-md-6">
             <div id="form-content">
@@ -112,7 +124,15 @@ WP19/assignment_2/assignment2.html
             </p>
         </div>
     </div>
+
+    <script src="main.js">
+
+        window.addEventLisener('load', function() {
+            console.log('Document Object Model has been loaded.');
+        } );
+
+    </script >
+
 </footer>
 </body>
 </html>
-
